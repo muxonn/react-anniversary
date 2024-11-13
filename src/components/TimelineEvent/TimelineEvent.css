@@ -1,0 +1,131 @@
+.timeline-event {
+    height: 360px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  left: 50%; /* Aligns with the vertical line */
+  transform: translateX(-50%);
+  width: 14px; /* Size of each dot */
+  height: 14px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 50%; /* Centers dot vertically with each event */
+  transform: translate(-50%, -50%); /* Centers dot on the line */
+}
+
+.timeline-event.left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: start;
+    text-align: right;
+  
+}
+  
+.timeline-event.right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: end;
+    text-align: left;
+  
+}
+  
+.event-content {
+    width: 50%;
+    height: 300px;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-content.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.event-content.left {
+    margin-left: 0%;
+}
+
+.event-content.right {
+    margin-right: 0%;
+}
+ 
+  
+.event-image {
+    height: 100%;
+    
+    max-width: 100%;
+    
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1400px) {
+    .event-image {
+        width: 360px; /* Medium screen size */
+    }
+}
+
+@media (max-width: 1100px) {
+    .event-image {
+        width: 300px; /* Small screen size */
+    }
+}
+
+@media (max-width: 960px) {
+    .event-image {
+        width: 260px; /* Extra small screens, like mobile */
+    }
+}
+
+@media (max-width: 760px) {
+    .event-image {
+        width: 260px; /* Extra small screens, like mobile */
+    }
+    .timeline-event {
+        height: 200px;
+    }
+}
+
+@media (max-width: 460px) {
+    .event-image {
+        width: 160px; /* Extra small screens, like mobile */
+    }
+
+    .event-content.left {
+    
+        margin-left: 0%;
+    }
+    
+    .event-content.right {
+       
+        margin-right: 0%;
+    }
+}
+  
+.event-text h3 {
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+  
+.event-text p {
+    font-size: 16px;
+    margin: 5px 0 0 0;
+}
+  
