@@ -46,9 +46,12 @@ const Timeline = () => {
   return (
     <div className="timeline">
       <div className="timeline-vertical-line"></div>
-      {events.map((event, index) => (
-        <TimelineEvent key={index} {...event} index={index} />
-      ))}
+      <div className="timeline-content">
+        {events.map((event, index) => (
+          <TimelineEvent key={index} {...event} index={index} />
+        ))}
+      </div>
+      
     </div>
   );
 };

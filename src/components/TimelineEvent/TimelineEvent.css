@@ -10,16 +10,17 @@
 }
 
 .timeline-event::before {
-  content: '';
-  position: absolute;
-  left: 50%; /* Aligns with the vertical line */
-  transform: translateX(-50%);
-  width: 14px; /* Size of each dot */
-  height: 14px;
-  background-color: #000;
-  border-radius: 50%;
-  top: 50%; /* Centers dot vertically with each event */
-  transform: translate(-50%, -50%); /* Centers dot on the line */
+    content: '';
+    position: absolute;
+    left: 50%; /* Aligns with the vertical line */
+    transform: translateX(-50%);
+    width: 14px; /* Size of each dot */
+    height: 14px;
+    background-color: #68ABA3;
+    border-radius: 50%;
+    border: 2px solid #212A3E;
+    top: 50%; /* Centers dot vertically with each event */
+    transform: translate(-50%, -50%); /* Centers dot on the line */
 }
 
 .timeline-event.left {
@@ -72,6 +73,12 @@
     
     object-fit: cover;
     margin-bottom: 10px;
+}
+
+.event-image:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Slightly enlarges the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Responsive adjustments for smaller screens */
