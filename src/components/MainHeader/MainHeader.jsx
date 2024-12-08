@@ -98,11 +98,12 @@ const MainHeader = () => {
               </footer>
             </div>
           )}
+          <div className="scroll-arrow2" onClick={handleScroll}>
+            <div className="arrow-icon">&#8595;</div> {/* Down arrow */}
+          </div>
         </div>
       )}
-      <div className="scroll-arrow2" onClick={handleScroll}>
-        <div className="arrow-icon">&#8595;</div> {/* Down arrow */}
-      </div>
+      
 
       
       

@@ -16,10 +16,10 @@ function App() {
   return (
     <div className="App">
       <MainHeader/>
-      <CounterHeader imgUrl={"/bg.mp4"} targetValue={targetValues.days} text={"dni uśmiechów"} isEven={false}/>
-      <CounterHeader imgUrl={"/cats.mp4"} targetValue={targetValues.hours} text={"godzin przytulasów"} isEven={true}/>
-      <CounterHeader imgUrl={"/pug.mp4"} targetValue={targetValues.minutes} text={"minut pełnych wspomnień"} isEven={false}/>
-      <CounterHeader imgUrl={"/concert.mp4"} targetValue={targetValues.seconds} text={"sekund wspólnie spędzonych chwil"} isEven={true}/>
+      <CounterHeader imgUrl={`${process.env.PUBLIC_URL}/bg.mp4`} targetValue={targetValues.days} text={"dni uśmiechów"} isEven={false}/>
+      <CounterHeader imgUrl={`${process.env.PUBLIC_URL}/cats.mp4`} targetValue={targetValues.hours} text={"godzin przytulasów"} isEven={true}/>
+      <CounterHeader imgUrl={`${process.env.PUBLIC_URL}/pug.mp4`} targetValue={targetValues.minutes} text={"minut pełnych wspomnień"} isEven={false}/>
+      <CounterHeader imgUrl={`${process.env.PUBLIC_URL}/concert.mp4`} targetValue={targetValues.seconds} text={"sekund wspólnie spędzonych chwil"} isEven={true}/>
       <Timeline/>
     </div>
   );

@@ -3,7 +3,7 @@ const events = [
     {
       date: '11.12.2021',
       title: 'Tutaj Karcia & Kubcia begin',
-      imageUrl: require('../../assets/img/1.PNG'),
+      imageUrl: require('../../assets/img/1.png'),
     },
     {
         date: '13.01.2022',
