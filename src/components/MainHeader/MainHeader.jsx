@@ -17,6 +17,13 @@ const MainHeader = () => {
     }
   };
 
+  const handleScroll = () => {
+    window.scrollBy({
+      top: window.innerHeight, // Scroll by the height of the viewport
+      behavior: 'smooth', // Smooth scrolling
+    });
+  };
+
   useEffect(() => {
     if (!isUnlocked) {
       document.body.style.overflow = "hidden";
@@ -74,19 +81,16 @@ const MainHeader = () => {
           {isOpen && (
             <div className="letter-content">
               <header className="letter-header">
-                <div className="receiver">Cześć Karciu,</div>
-                <div className="sender">Od: Kuby</div>
+                <div className="receiver">Droga Karolino Hermenegildo Bartmińska,</div>
               </header>
               <main className="letter-body">
-                <div className="title">3 lata minęły jak jeden dzień...</div>
+                <div className="title">3 lata razem!!!!</div>
                 <p>
-                  Mam nadzieję, że ten dzień jest pełen uśmiechu, energii i
-                  pięknych chwil. Pamiętaj, że jesteś niesamowitą osobą i każdy
-                  dzień z Tobą jest jak przygoda pełna radości.
+                  To, co zobaczysz poniżej, to starannie wyselekcjonowane przeze mnie najlepsze chwile z każdego miesiąca,
+                  jakie przeżyliśmy przez te 3 lata❤️
                 </p>
                 <p>
-                  Chciałem tylko przypomnieć Ci, jak bardzo doceniam to, co
-                  robisz i jak wiele dla mnie znaczysz.
+                  3 lata to nie tylko liczba, 3 lata to też...
                 </p>
               </main>
               <footer className="letter-footer">
@@ -96,6 +100,12 @@ const MainHeader = () => {
           )}
         </div>
       )}
+      <div className="scroll-arrow2" onClick={handleScroll}>
+        <div className="arrow-icon">&#8595;</div> {/* Down arrow */}
+      </div>
+
+      
+      
     </section>
   );
 };

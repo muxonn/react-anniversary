@@ -175,6 +175,11 @@ const events = [
         title: 'Piękni i młodzi na halloween - ja piękny, ty młoda',
         imageUrl: require('../../assets/img/34.jpg'),
     },
+    {
+        date: '09.11.2024',
+        title: 'Zwierzogród na Pradze, a potem wypad starych na osiemnastkę🕺',
+        imageUrl: require('../../assets/img/35.jpg'),
+    },
 ];
 
 export default events;
