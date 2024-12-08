@@ -16,9 +16,9 @@
     transform: translateX(-50%);
     width: 14px; /* Size of each dot */
     height: 14px;
-    background-color: #68ABA3;
+    background-color: var(--secondary-color);
     border-radius: 50%;
-    border: 2px solid #212A3E;
+    border: 4px solid var(--primary-color);
     top: 50%; /* Centers dot vertically with each event */
     transform: translate(-50%, -50%); /* Centers dot on the line */
 }
@@ -70,19 +70,39 @@
 .event-image {
     height: 100%;
     border-radius: 10px;
-    border: 2px solid white;
+    border: 4px solid var(--text-color);
     max-width: 100%;
     
     object-fit: cover;
     margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
 .event-image:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05); /* Slightly enlarges the image */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.3); /* Slightly enlarges the image */
+   
 }
+
+.event-text {
+    margin-top: 16px;
+}
+
+.event-text h3 {
+    font-size: 22px;
+    margin: 0;
+    text-align: center;
+    color: var(--text-color);
+}
+  
+.event-text p {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    color: var(--text-color);
+}
+  
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 1400px) {
@@ -128,20 +148,3 @@
     }
 }
  
-.event-text {
-    margin-top: 16px;
-}
-
-.event-text h3 {
-    font-size: 18px;
-    margin: 0;
-    text-align: center;
-    color: white;
-}
-  
-.event-text p {
-    font-size: 16px;
-    margin: 5px 0 0 0;
-    color: white;
-}
-  

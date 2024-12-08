@@ -2,6 +2,7 @@
     position: relative;
     padding-top: 200px;
     padding-bottom: 200px;
+    font-family: "Georgia", serif;
 }
 
 .timeline-content {
@@ -20,7 +21,7 @@
     left: 50%; /* Linia wyśrodkowana */
     transform: translateX(-50%);
     width: 2px;
-    background-color: #68ABA3;
+    background-color: var(--secondary-color);
     top: 0;
     bottom: 0;
     z-index: -1;
@@ -32,9 +33,9 @@
     transform: translateX(-50%);
     width: 28px;
     height: 28px;
-    background-color: #68ABA3;
+    background-color: var(--secondary-color);
     border-radius: 50%;
-    border: 2px solid #212A3E;
+    border: 2px solid var(--primary-color);
 }
 
 .timeline-vertical-line::before {

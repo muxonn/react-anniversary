@@ -1,3 +1,17 @@
+/* :root {
+  --primary-color: #212A3E;
+  --secondary-color: #68ABA3;
+  --white: #f5f5f5;
+  --text-color: #f5f5f5;
+} */
+
+:root {
+  --primary-color: #f9f4ef;
+  --secondary-color: #6a4c39;
+  --white: #f5f5f5;
+  --text-color: #333;
+}
+
 .App {
   text-align: center;
  
