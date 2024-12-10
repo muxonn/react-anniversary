@@ -92,3 +92,10 @@
     font-size: 24px; /* Arrow size */
     color: #333;
   }
+
+  @media (max-width: 460px) {
+
+    .counter {
+        font-size: 36px;
+    }
+  }

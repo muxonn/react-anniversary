@@ -51,3 +51,9 @@
     transform: rotate(360deg);
   }
 }
+
+.last-header {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 20px;
+}

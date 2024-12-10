@@ -21,6 +21,7 @@ function App() {
       <CounterHeader imgUrl={`${process.env.PUBLIC_URL}/pug.mp4`} targetValue={targetValues.minutes} text={"minut pełnych wspomnień"} isEven={false}/>
       <CounterHeader imgUrl={`${process.env.PUBLIC_URL}/concert.mp4`} targetValue={targetValues.seconds} text={"sekund wspólnie spędzonych chwil"} isEven={true}/>
       <Timeline/>
+      <div className='last-header'>To be continued...</div>
     </div>
   );
 }

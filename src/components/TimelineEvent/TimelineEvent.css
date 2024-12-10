@@ -87,6 +87,7 @@
 
 .event-text {
     margin-top: 16px;
+    text-align: center;
 }
 
 .event-text h3 {
@@ -134,17 +135,31 @@
 
 @media (max-width: 460px) {
     .event-image {
-        width: 160px; /* Extra small screens, like mobile */
+        width: 120px; /* Extra small screens, like mobile */
     }
 
     .event-content.left {
     
-        margin-left: 0%;
+        margin-left: -10px;
     }
     
     .event-content.right {
        
-        margin-right: 0%;
+        margin-right: -10px;
+    }
+
+    .event-text h3 {
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+        color: var(--text-color);
+    }
+      
+    .event-text p {
+        font-weight: 500;
+        font-size: 16px;
+        margin: 5px 0 0 0;
+        color: var(--text-color);
     }
 }
  
